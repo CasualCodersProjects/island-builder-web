@@ -1,0 +1,157 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.hexagon-container {
+  /* Styles for the hexagonal container */
+  width: 300px;
+  height: 260px;
+  background-color: #ffffff;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(30deg)
+}
+
+.text-box {
+  /* Styles for the text box */
+  width: 50px;
+  height: 30px;
+  background-color: white;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #000000;
+  transform: translate(-35px, 20px) rotate(-30deg);
+}
+
+.hex-button {
+  /* Styles for the hexagon shaped buttons */
+  width: 60px;
+  height: 52px;
+  background-color: #000000;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.wheat {
+  background-color: yellow;
+}
+
+.sheep {
+  background-color: lightgreen;
+}
+
+.wood {
+  background-color: green;
+}
+
+.ore {
+  background-color: blue;
+}
+
+.brick {
+  background-color: red;
+}
+
+.desert {
+  background-color: wheat;
+}
+
+
+.button-grid {
+  /* Grid layout for buttons */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 5px;
+  transform: translateX(15px) rotate(-30deg);
+}
+
+
+.hexagon-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    transform: scale(0.7);
+}
+
+.hex-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -25px; /* Adjust for hexagon shape overlap */
+}

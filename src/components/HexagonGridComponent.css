@@ -1,0 +1,38 @@
+
+.hexagon-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.hex-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -25px; /* Adjust for hexagon shape overlap */
+}
+
+/* Responsive styling for hexagons based on screen width */
+@media (max-width: 600px) {
+    .hexagon-container {
+        width: 80px; /* Smaller size for smaller screens */
+        height: 70px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .hexagon-container {
+        width: 120px; /* Medium size for medium screens */
+        height: 104px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .hexagon-container {
+        width: 150px; /* Larger size for larger screens */
+        height: 130px;
+    }
+}
